@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottom Alert View Controller-->
+        <scene sceneID="zBn-kP-ned">
+            <objects>
+                <viewController storyboardIdentifier="BottomAlertViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YTp-Mm-pIp" customClass="BottomAlertViewController" customModule="Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIH-Nm-Sii">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0R-n6-ZTB" userLabel="Alert Content Container View">
+                                <rect key="frame" x="16" y="618" width="343" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="r0j-cn-KjK" customClass="LightLabel" customModule="Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="323" height="33"/>
+                                        <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4823529411764706" green="0.29803921568627451" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="r0j-cn-KjK" firstAttribute="centerY" secondItem="x0R-n6-ZTB" secondAttribute="centerY" id="EhQ-9a-ADh"/>
+                                    <constraint firstAttribute="trailing" secondItem="r0j-cn-KjK" secondAttribute="trailing" constant="10" id="I6F-Bj-LmD"/>
+                                    <constraint firstItem="r0j-cn-KjK" firstAttribute="leading" secondItem="x0R-n6-ZTB" secondAttribute="leading" constant="10" id="Rut-dO-9pJ"/>
+                                    <constraint firstItem="r0j-cn-KjK" firstAttribute="top" secondItem="x0R-n6-ZTB" secondAttribute="top" id="uim-s1-eg8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rsp-xq-ugF" firstAttribute="bottom" secondItem="x0R-n6-ZTB" secondAttribute="bottom" constant="16" id="3ao-iE-UvH"/>
+                            <constraint firstItem="x0R-n6-ZTB" firstAttribute="leading" secondItem="rsp-xq-ugF" secondAttribute="leading" constant="16" id="9Mq-h0-V74"/>
+                            <constraint firstItem="x0R-n6-ZTB" firstAttribute="trailing" secondItem="rsp-xq-ugF" secondAttribute="trailing" constant="-16" id="VFC-5P-ZcM"/>
+                            <constraint firstItem="x0R-n6-ZTB" firstAttribute="height" secondItem="aIH-Nm-Sii" secondAttribute="height" multiplier="0.3" constant="-167" id="vcI-1O-uXa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rsp-xq-ugF"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="textLabel" destination="r0j-cn-KjK" id="zwb-Cy-vV3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XsB-5L-gfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="-116"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>repositories</key>
+	<string>/search/repositories?q=language:swift&amp;sort=stars&amp;page={page}&amp;per_page={perPage}</string>
+	<key>baseUrl</key>
+	<string>https://api.github.com</string>
+</dict>
+</plist>
